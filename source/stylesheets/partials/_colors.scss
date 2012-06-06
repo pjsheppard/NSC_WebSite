@@ -1,0 +1,119 @@
+$col-site-white: #ffffff;
+$col-site-black: #000000;
+$col-site-gray: #444444;
+$col-site-green: #697F3A;
+$col-site-lightgreen: #419D4D;
+$col-site-darkgreen: #343F1D;
+$col-site-yellow: #F8F67B;
+
+$col-background: $col-site-gray;
+$col-container-background: $col-site-gray;
+$col-titlebar-background: $col-site-black;
+$col-borders: lighten($col-site-gray, 50%);
+
+// Base Colors
+
+$brand-color: #697F3A;
+$action-color: #F8F67B;
+$function-color: #343F1D;
+$alert-color: #F8F67B;
+
+$pageback-color: #444444;
+$pagefore-color: #050505;
+
+$black-color: #444;
+$white-color: #ffffff;
+
+// Lighter and Darker Versions
+
+$brand-color-light: lighten( $brand-color, 10% );
+$brand-color-lighter: lighten( $brand-color, 20% );
+$brand-color-dark: darken( $brand-color, 10% );
+$brand-color-darker: darken( $brand-color, 20% );
+
+$action-color-light: lighten( $action-color, 10% );
+$action-color-lighter: lighten( $action-color, 20% );
+$action-color-dark: darken( $action-color, 10% );
+$action-color-darker: darken( $action-color, 20% );
+
+$function-color-light: lighten( $function-color, 10% );
+$function-color-lighter: lighten( $function-color, 20% );
+$function-color-dark: darken( $function-color, 10% );
+$function-color-darker: darken( $function-color, 20% );
+
+$function-color-light: lighten( $function-color, 10% );
+$function-color-lighter: lighten( $function-color, 20% );
+$function-color-dark: darken( $function-color, 10% );
+$function-color-darker: darken( $function-color, 20% );
+
+$pageback-color-light: lighten( $pageback-color, 10% );
+$pageback-color-lighter: lighten( $pageback-color, 20% );
+$pageback-color-dark: darken( $pageback-color, 10% );
+$pageback-color-darker: darken( $pageback-color, 20% );
+
+$pagefore-color-light: lighten( $pagefore-color, 10% );
+$pagefore-color-lighter: lighten( $pagefore-color, 20% );
+$pagefore-color-dark: darken( $pagefore-color, 10% );
+$pagefore-color-darker: darken( $pagefore-color, 20% );
+
+// Gradients
+
+@mixin brand-gradient {
+  background: url( imagefallback.png ) repeat-x $brand-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $brand-color 22%, $brand-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$brand-color), color-stop(100%,$brand-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $brand-color 22%,$brand-color-darker 100%);
+}
+
+@mixin action-gradient {
+  background: url( imagefallback.png ) repeat-x $action-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $action-color 22%, $action-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$action-color), color-stop(100%,$action-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $action-color 22%,$action-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $action-color 22%,$action-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $action-color 22%,$action-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $action-color 22%,$action-color-darker 100%);
+}
+
+@mixin function-gradient {
+  background: url( imagefallback.png ) repeat-x $function-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $function-color 22%, $function-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$function-color), color-stop(100%,$function-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $function-color 22%,$function-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $function-color 22%,$function-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $function-color 22%,$function-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $function-color 22%,$function-color-darker 100%);
+}
+
+@mixin alert-gradient {
+  background: url( imagefallback.png ) repeat-x $alert-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $alert-color 22%, $alert-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$alert-color), color-stop(100%,$alert-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $alert-color 22%,$alert-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $alert-color 22%,$alert-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $alert-color 22%,$alert-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $alert-color 22%,$alert-color-darker 100%);
+}
+
+@mixin pageback-gradient {
+  background: url( imagefallback.png ) repeat-x $pageback-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $pageback-color 22%, $pageback-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$pageback-color), color-stop(100%,$pageback-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $pageback-color 22%,$pageback-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $pageback-color 22%,$pageback-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $pageback-color 22%,$pageback-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $pageback-color 22%,$pageback-color-darker 100%);
+}
+
+@mixin pagefore-gradient {
+  background: url( imagefallback.png ) repeat-x $pagefore-color-darker;
+  background: -moz-radial-gradient(center, ellipse cover, $pagefore-color 22%, $pagefore-color-darker 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%,$pagefore-color), color-stop(100%,$pagefore-color-darker));
+  background: -webkit-radial-gradient(center, ellipse cover, $pagefore-color 22%,$pagefore-color-darker 100%);
+  background: -o-radial-gradient(center, ellipse cover, $pagefore-color 22%,$pagefore-color-darker 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $pagefore-color 22%,$pagefore-color-darker 100%);
+  background: radial-gradient(center, ellipse cover, $pagefore-color 22%,$pagefore-color-darker 100%);
+}

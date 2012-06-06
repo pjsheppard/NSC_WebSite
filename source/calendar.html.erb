@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <title><%= page_title "Calendar" %></title>
+<% end %>
+
+    <%= section_name "Full Calendar" %>
+    <%= partial "partials/calendarsectionnav" %>
+		
+		<div id="page">
+
+			<div id="content">
+				<iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23419D4D&amp;src=webmaster%40nottinghamsc.org.uk&amp;color=%232F6309&amp;ctz=Europe%2FLondon" style=" border-width:0 " width="950" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+
+		</div>

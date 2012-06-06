@@ -11,8 +11,18 @@
   
   <body class="<%= page_classes %>">
 
-    <div id="main" role="main">
-      <%= yield %>
+    <div id="container">
+
+      <%= partial "partials/header" %>
+
+      <%= partial "partials/navigation" %>
+
+      <div id="main" role="main">
+        <%= yield %>
+      </div>
+      
+      <%= partial "partials/footer" %>
+      
     </div>
     
   </body>

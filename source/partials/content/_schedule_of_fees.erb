@@ -1,0 +1,86 @@
+<div class="feeschedule">  
+  <h2>Schedule of Fees</h2>
+  
+  <p>The Club year runs for 12 months from 1st October<br>
+  The subscriptions below are for the Club Year commencing 1st October 2011<br>
+  These fees will cover Membership until 30th September 2012</p>
+  
+  <div id="halfpageleft"> 
+  
+    <h3>Joining Fees (One-Off)</h3>
+    
+    <table>
+      <thead>
+        <td class="fee">Fee</td>
+        <td class="price">Price</td>
+      </thead>
+      <tbody>
+        <% data.joiningfee.each do |f| %>
+          <tr>
+            <td><%= f.fee %></td>
+            <td><%= f.price %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  
+    <h3>Subscriptions (Annual)</h3>	
+  
+    <table>
+      <thead>
+        <td class="fee">Fee</td>
+        <td class="price">Price</td>
+      </thead>
+      <tbody>
+        <% data.subscriptionfee.each do |f| %>
+          <tr>
+            <td><%= f.fee %></td>
+            <td><%= f.price %></td>
+          </tr>
+        <% end %>
+      </tbody>    
+    </table>
+  
+  </div>
+  
+  <div id="halfpageright">
+  
+    <h3>Other Fees (Annual)</h3>
+    
+    <table>
+      <thead>
+        <td class="fee">Fee</td>
+        <td class="price">Price</td>
+      </thead>
+      <tbody>
+        <% data.otherfee.each do |f| %>
+          <tr>
+            <td><%= f.fee %></td>
+            <td><%= f.price %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+    <h3>Notes</h3>
+    
+    <div class="notes">
+    
+      <ul>
+        <li>Associate Members are the partners of Ordinary Members.</li>
+        <li>Junior Members are under 18 years of age at the beginning of the 
+            January in the Membership year.</li>
+        <li>Intermediate Members are under 21 years of age at the beginning of
+            the January in the Membership year.</li>
+        <li>Senior Members are retired and are over 60 years of age at the 
+            beginning of the January in the Membership year.</li>
+        <li>Family subscription covers children from 12 years of age at the 
+            beginning of the January in the Membership year.</li>
+        <li>There is no membership for children under 12 years, but they can 
+            of course sail if their parent is an Ordinary or Associate Member.</li>
+      </ul>
+
+    </div>
+  
+  </div>
+</div>

@@ -1,0 +1,21 @@
+---
+  - fee: Ordinary Members
+    price: £96
+  - fee: Associate Members
+    price: £16
+  - fee: Junior Members (<18)
+    price: £16
+  - fee: Family Subscription Limit
+    price: £119
+  - fee: Intermediate Members (<21)
+    price: £25
+  - fee: Student Member
+    price: £25
+  - fee: Senior Members (60-69)
+    price: £72
+  - fee: Senior Members (70+)
+    price: £48
+  - fee: Social Members
+    price: £23
+  - fee: Temporary Members (per month)
+    price: £15

@@ -1,0 +1,83 @@
+<% content_for :head do %>
+  <title><%= page_title "Calendar" %></title>
+<% end %>
+
+    <%= section_name "Social" %>
+    <%= partial "partials/calendarsectionnav" %>
+		
+		<div id="page">
+
+			<div id="sidebarleft">
+				<img src="./images/committee/SA.png"/>
+				
+				<div class="title">
+					<h3>Stephanie Abbott</h3>
+					<p>Social Secretary</p>
+				</div>
+			</div>
+			
+			<div id="contentright">
+
+			<div class="pagetext">
+				<h2>Social Events 2012</h2>
+				
+        <table>
+          <thead>
+            <td>Date</td>
+            <td>Day</td>
+            <td>Venue</td>
+            <td>Event</td>
+          </thead>
+          <tbody>
+            <% data.socialevents.each do |e| %>
+              <tr>
+                <td><%= date_helper(e.date) %></td>
+                <td><%= day_helper(e.date) %></td>
+                <td><%= e.venue %></td>
+                <td><%= e.event %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+				<p>Please see the notice board, website and your emails for more 
+				information about these events closer to the time.</p>
+				
+				<div class="highlighttext">
+						<h3>Tuesday Evenings</h3> 
+						<p>A great chance for a casual sail or a 
+						natter at the bar. Hot light meals are available: please order 
+						before 7:30 pm.
+						<br><br> 
+						Tuesday evening talks - to be arranged during the year, 
+						keep your eye out for information.</p>
+				</div>
+				
+				<div class="highlighttext">
+						<h3>Sundays and Bank Holidays</h3> 
+						<p>Light lunches are available at the Club on Sundays and Bank 
+						Holidays.</p>
+				</div>
+				
+				<div class="highlighttext">
+						<h3>Licensed bar</h3> 
+						<p>During most club sessions our licensed bar will be open - 
+						please use this facility - it is very reasonably priced and 
+						offers a good choice of drinks (soft and alcoholic) and snacks.
+						<br><br>
+						<b>Just a reminder: it is against our Club Rules to drink alcohol
+						 not purchased on the premises.</b></p>
+				</div>
+				
+				<div class="highlighttext last">
+						<h3>BBQ area</h3> 
+						<p>The Club has a barbecue area, which can be used by Members, 
+						the utensils are under the Start Box.<br>
+						Please don’t use items from the kitchen but feel free to make 
+						use of the barbecue.</p>
+				</div>
+			</div>
+
+			</div>
+
+		</div>

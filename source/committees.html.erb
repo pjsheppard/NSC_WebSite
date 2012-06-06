@@ -1,0 +1,171 @@
+<% content_for :head do %>
+  <title><%= page_title "About" %></title>
+<% end %>
+
+    <%= section_name "Committees" %>
+    <%= partial "partials/clubsectionnav" %>
+		
+		<div id="page" class="nosectionnav">
+			
+      <div class="committeepage">
+
+        <div id="halfpageleft">  
+
+          <div class="committee">
+
+            <h2>Executive Committee</h2>
+            
+            <table>
+              <tbody>
+                <% data.executivecommittee.each do |m| %>
+                  <% if m.group == 1 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+            
+            <table>
+              <tbody>
+                <% data.executivecommittee.each do |m| %>
+                  <% if m.group == 2 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+            
+            <h3>Committee Members</h3>
+            
+            <table>
+              <tbody>
+                <% data.executivecommittee.each do |m| %>
+                  <% if m.group == 3 %>
+                    <tr>
+                      <td class="image"><img src="<%= m.avatar %>"/></td>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+            
+            <table>
+              <tbody>
+                <% data.executivecommittee.each do |m| %>
+                  <% if m.group == 4 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+          
+          </div>
+        
+        </div>
+        
+        <div id="halfpageright">  
+
+          <div class="committee">
+
+            <h2>Sailing Committee</h2>
+            
+            <table>
+              <tbody>
+                <% data.sailingcommittee.each do |m| %>
+                  <% if m.group == 1 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+            
+            <h3>Committee Members</h3>
+            
+            <table>
+              <tbody>
+                <% data.sailingcommittee.each do |m| %>
+                  <% if m.group == 2 %>
+                    <tr>
+                      <td class="image"><img src="<%= m.avatar %>"/></td>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+          
+          </div>
+            
+          <div class="committee">
+                  
+            <h2>Training</h2>
+            
+            <table>
+              <tbody>
+                <% data.trainingcommittee.each do |m| %>
+                  <% if m.group == 1 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+          
+          </div>
+  
+          <div class="committee">
+
+            <h2>Fleet Captains</h2>
+            
+            <table>
+              <tbody>
+                <% data.fleetcaptains.each do |m| %>
+                  <% if m.group == 1 %>
+                    <tr>
+                      <td class="image" rowspan="2"><img src="<%= m.avatar %>"/></td>
+                      <td class="title"><%= m.title %></td>
+                    </tr>
+                    <tr>
+                      <td class="name"><%= m.name %></td>
+                    </tr>
+                  <% end %>
+                <% end %>
+              </tbody>    
+            </table>
+          
+          </div>
+          
+        </div>        
+      
+      </div>
+    </div>

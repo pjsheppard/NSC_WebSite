@@ -1,0 +1,42 @@
+<% content_for :head do %>
+  <title><%= page_title "Racing" %></title>
+<% end %>
+
+    <%= section_name "Results Archive" %>
+    <%= partial "partials/racingsectionnav" %>
+		
+		<div id="page">
+
+			<div id="content">
+				<div class="pagetext">	
+						<h1>NSC Results Archive</h1> 				
+						<div class="links">
+							<a href="./results/2011/nscResults.html" target="resultsFrame">2011</a>
+							<a href="./results/2010/nscrlts.htm" target="resultsFrame">2010</a>
+							<a href="./results/2009/nscrlts.htm" target="resultsFrame">2009</a>
+							<a href="./results/2008/nscrlts.htm" target="resultsFrame">2008</a>
+							<a href="./results/2007/nscrlts.htm" target="resultsFrame">2007</a>
+							<a href="./results/2006/nscrlts.htm" target="resultsFrame">2006</a>
+							<a href="./results/2005/nscrlts.htm" target="resultsFrame">2005</a>
+							<a href="./results/2004/nscrlts.htm" target="resultsFrame">2004</a>
+							<a href="./results/2003/nscrlts.htm" target="resultsFrame">2003</a>
+							<a href="./results/2002/nscrlts.htm" target="resultsFrame">2002</a>
+							<a href="./results/2001/nscrlt01.htm" target="resultsFrame">2001</a>
+							<a href="./results/2000/nscrlt00.htm" target="resultsFrame">2000</a>
+							<a href="./results/1999/nscrlt99.htm" target="resultsFrame">1999</a>
+							<a href="./results/1998/nscrlt98.htm" target="resultsFrame">1998</a>
+							<a href="./results/1997/nscrlt97.htm" target="resultsFrame">1997</a>
+							<a href="./results/1996/nscrlt96.htm" target="resultsFrame">1996</a>
+							<a href="./results/1995/nscrlt95.htm" target="resultsFrame">1995</a>
+							<a href="./results/1994/nscrlt94.htm" target="resultsFrame">1994</a>
+							<a href="./results/1993/nscrlt93.htm" target="resultsFrame">1993</a>
+						</div>
+					</div>
+			</div>
+
+			<div id="content">
+				<!-- <iframe src="http://www.nottinghamsc.org.uk/results/nscResults.html" width="950" height="1000"></iframe> -->
+				<iframe name="resultsFrame" src="./results/2011/nscResults.html" width="950" height="1000"></iframe>
+			</div>
+
+		</div>
