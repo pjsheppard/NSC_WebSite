@@ -101,7 +101,7 @@ helpers do
     else
       activeclass = displayname == @current_page_name ? " class=\"active\" " : " "
     end
-    "<a href=\"" + target + "\"" + activeclass + ">" + displayname + "</a>"
+    "<a href=\"" + target + "\"" + activeclass + ">" + CGI::escapeHTML(displayname) + "</a>"
   end
   
   # section_nav_link method
@@ -117,7 +117,7 @@ helpers do
     else
       activeclass = displayname == @current_section_name ? " class=\"active\" " : " "
     end
-    "<a href=\"" + target + "\"" + activeclass + ">" + displayname + "</a>"    
+    "<a href=\"" + target + "\"" + activeclass + ">" + CGI::escapeHTML(displayname) + "</a>"    
   end
   
   # date_helper method
